@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/DM+Sans">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="balance-container">
+    <div class="text">
+      <p>My balance</p> 
+      <h1>$921.48</h1>
+    </div>
+    <img src="./images/logo.svg" alt="logo">
+  </div>
+  
+  <div class="main-container">
+    <h2>Spending - Last 7 days</h2>
+    <div class="chart-container">
+      <div class="bars-container">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+        <div class="bar" id="bar4"></div>
+        <div class="bar" id="bar5"></div>
+        <div class="bar" id="bar6"></div>
+        <div class="bar" id="bar7"></div>
+
+      </div>
+      <div class="labels-container">
+        <p>mon</p> 
+        <p>tue</p> 
+        <p>wed</p> 
+        <p>thu</p> 
+        <p>fri</p> 
+        <p>sat</p> 
+        <p>sun</p> 
+      </div>
+    </div>
+    
+    <hr>
+
+    <div class="total-container">
+      <div class="month">
+        <p>Total this month</p> 
+        <h1>$478.33</h1>
+      </div>
+      <div class="last-month">
+        <h3>+2.4%</h3>
+        <p>from last month</p> 
+      </div>
+      
+    </div>
+   
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

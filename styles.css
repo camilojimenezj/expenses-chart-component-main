@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    background-color: hsl(27, 66%, 92%);
+}
+
+img {
+    width: fit-content;
+}
+
+.balance-container {
+    width: 400px;
+    height: 50px;
+    padding: 30px;
+    border-radius: 17px;
+    background-color: hsl(10, 79%, 65%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container {
+    width: 400px;
+    height: 370px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 17px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.chart-container {
+
+    width: inherit;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.labels-container {
+    padding: 0 8px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.bars-container {
+    height: 180px;
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.bar {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 40px;
+    height: 130px;
+}
+
