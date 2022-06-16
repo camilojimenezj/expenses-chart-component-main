@@ -25,6 +25,6 @@ fetch('./data.json')
             values[i].innerHTML = "$" + data[i];
         }
     })
-    
 
+    
 
