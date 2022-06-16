@@ -1,8 +1,6 @@
 "use strict";
 let bars = document.getElementsByClassName("bar");
 let values = document.getElementsByClassName("value");
-values[0].innerHTML= 5
-
 
 fetch('./data.json')
     .then(results => results.json())
