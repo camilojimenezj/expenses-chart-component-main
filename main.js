@@ -1,5 +1,7 @@
 "use strict";
 let bars = document.getElementsByClassName("bar");
+let values = document.getElementsByClassName("value");
+values[0].innerHTML= 5
 
 
 fetch('./data.json')
@@ -17,5 +19,14 @@ fetch('./data.json')
         bars[arr.indexOf(Math.max(...arr))].style.background = "hsl(186, 34%, 60%)"
     });
 
+fetch('./data.json')
+    .then(results => results.json())
+    .then(data => data.map(obj => obj.amount))
+    .then(data => {
+        for(let i = 0; i < values.length; i++){
+            values[i].innerHTML = "$" + data[i];
+        }
+    })
+    
 
 

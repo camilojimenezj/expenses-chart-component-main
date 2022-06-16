@@ -56,21 +56,33 @@ img {
     width: inherit;
     height: 200px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content:space-between;
 }
 
-.labels-container {
+/* .labels-container {
     padding: 0 8px;
     display: flex;
     justify-content:space-between;
+} */
+
+.bar-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bars-container {
-    height: 180px;
-    display: flex;
-    justify-content:space-between;
-    align-items:flex-end;
+.value {
+    opacity: 0;
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    width: 55px;
+    height: 35px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    line-height: 35px;
 }
 
 .bar {
@@ -80,3 +92,10 @@ img {
     height: 130px;
 }
 
+.bar:hover {
+    opacity: 0.7;
+}
+
+.bar-container:hover > .value {
+    opacity: 1;
+}
